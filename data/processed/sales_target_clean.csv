@@ -1,0 +1,21 @@
+month_of_order_date,category,target
+2026-04-19 00:00:00,Furniture,11900.0
+2026-05-19 00:00:00,Furniture,12000.0
+2026-06-19 00:00:00,Furniture,12100.0
+2026-07-19 00:00:00,Furniture,12300.0
+2026-08-19 00:00:00,Furniture,12400.0
+2026-09-19 00:00:00,Furniture,12500.0
+2026-04-19 00:00:00,Clothing,16000.0
+2026-05-19 00:00:00,Clothing,16000.0
+2026-06-19 00:00:00,Clothing,16000.0
+2026-07-19 00:00:00,Clothing,16000.0
+2026-08-19 00:00:00,Clothing,16000.0
+2026-09-19 00:00:00,Clothing,16000.0
+2026-04-19 00:00:00,Electronics,16000.0
+2026-05-19 00:00:00,Electronics,16000.0
+2026-06-19 00:00:00,Electronics,16000.0
+2026-07-19 00:00:00,Electronics,16000.0
+2026-08-19 00:00:00,Electronics,16000.0
+2026-09-19 00:00:00,Electronics,16000.0
+,,
+"Note: Apr'19-Sep'19 targets are extrapolated from the original 12-month trend (Furniture: continues its step-up pattern; Clothing & Electronics: held flat at their last observed value of 16000, since both had plateaued).",,
