@@ -83,3 +83,32 @@ SELECT
 FROM sales_analytics
 GROUP BY year, month_num, month, category
 ORDER BY year, month_num;
+
+
+CREATE OR REPLACE VIEW sales_state_map AS
+SELECT
+    state,
+    SUM(amount) AS sales,
+    CASE state
+        WHEN 'Maharashtra' THEN 'IN-MH'
+        WHEN 'Uttar Pradesh' THEN 'IN-UP'
+        WHEN 'Punjab' THEN 'IN-PB'
+        WHEN 'Madhya Pradesh' THEN 'IN-MP'
+        WHEN 'Gujarat' THEN 'IN-GJ'
+        WHEN 'Tamil Nadu' THEN 'IN-TN'
+        WHEN 'Sikkim' THEN 'IN-SK'
+        WHEN 'Bihar' THEN 'IN-BR'
+        WHEN 'Delhi' THEN 'IN-DL'
+        WHEN 'Jammu and Kashmir' THEN 'IN-JK'
+        WHEN 'Andhra Pradesh' THEN 'IN-AP'
+        WHEN 'Rajasthan' THEN 'IN-RJ'
+        WHEN 'Haryana' THEN 'IN-HR'
+        WHEN 'Karnataka' THEN 'IN-KA'
+        WHEN 'West Bengal' THEN 'IN-WB'
+        WHEN 'Nagaland' THEN 'IN-NL'
+        WHEN 'Goa' THEN 'IN-GA'
+        WHEN 'Himachal Pradesh' THEN 'IN-HP'
+        WHEN 'Kerala' THEN 'IN-KL'
+    END AS iso_code
+FROM sales_analytics
+GROUP BY state;
